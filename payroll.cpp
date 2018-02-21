@@ -37,7 +37,7 @@ void insert()
    cout<<"\nEnter Employee age:";
   cin>>e1[idx].age;
    cout<<"\nEnter Employee gross salary:";
-  cin>>e1[idx].gros_salary;
+  cin>>e1[idx].gross_salary;
    cout<<"\nEnter Employee net salary:";
   cin>>e1[idx].net_salary;
   idx++;
