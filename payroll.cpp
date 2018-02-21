@@ -47,7 +47,20 @@ int main()
 
  while(1)
  { cout<<"Enter choice 1:Input Data 2.Query\n";
- ciun>>ch;
+ cin>>ch;
+  if(ch==1)
+    insert();
+  else if(ch==2)
+    query();
+  else
+  {cout<<"Invalid choice";
+   continue;
+  }
+  cout<<"Want to continue y/n: ";
+  char ch1;
+  cin>>ch1;
+  if(ch1=='y')
+    continue;
  }
   return 0;
 }
