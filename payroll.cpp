@@ -28,11 +28,11 @@ int main()
  else
  {
    eid-=101;
-   cout<<"Employee id:"<<e1[eid].emp_id;
-   cout<<"Employee name:"<<e1[eid].name;
-   cout<<"Employee age:"<<e1[eid].age;
-   cout<<"Employee gross salary:"<<e1[eid].gross_salary;
-   cout<<"Employee net salary:"<<e1[eid].net_salary;
+   cout<<"\nEmployee id:"<<e1[eid].emp_id;
+   cout<<"\nEmployee name:"<<e1[eid].name;
+   cout<<"\nEmployee age:"<<e1[eid].age;
+   cout<<"\nEmployee gross salary:"<<e1[eid].gross_salary;
+   cout<<"\nEmployee net salary:"<<e1[eid].net_salary;
  }
   return 0;
 }
