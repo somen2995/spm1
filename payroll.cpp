@@ -10,6 +10,24 @@ struct emp
 };
 struct emp e1[10];
 int idx=0;
+
+void query()
+{ cout<<"Enter employee id:";
+ int eid;
+ cin>>eid;
+ for(int i=0;i<10;i++)
+ {if( e1[i].emp_id==eid)
+  {
+   cout<<"Employee id:"<<e1[i].emp_id;
+   cout<<"\nEmployee name:"<<e1[i].name;
+   cout<<"\nEmployee age:"<<e1[eid].age;
+   cout<<"\nEmployee gross salary:"<<e1[i].gross_salary;
+   cout<<"\nEmployee net salary:"<<e1[i].net_salary;
+  }
+ }
+ if(i==10)
+    cout<<"Invalid id";
+}
 void insert()
 {
     cout<<"\nEnter Employee id:";
@@ -25,7 +43,11 @@ void insert()
   idx++;
 }
 int main()
-{
- 
+{int ch;
+
+ while(1)
+ { cout<<"Enter choice 1:Input Data 2.Query\n";
+ ciun>>ch;
+ }
   return 0;
 }
