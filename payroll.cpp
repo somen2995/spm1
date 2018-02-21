@@ -8,31 +8,24 @@ struct emp
   float gross_salary;
   float net_salary;
 };
+struct emp e1[10];
+int idx=0;
+void insert()
+{
+    cout<<"\nEnter Employee id:";
+    cin>>e1[idx].emp_id;
+   cout<<"\nEnter Employee name:";
+  cin>>e1[idx].name;
+   cout<<"\nEnter Employee age:";
+  cin>>e1[idx].age;
+   cout<<"\nEnter Employee gross salary:";
+  cin>>e1[idx].gros_salary;
+   cout<<"\nEnter Employee net salary:";
+  cin>>e1[idx].net_salary;
+  idx++;
+}
 int main()
-{ struct emp e1[10];
- strcpy(e1[0].name,"panda");
- e1[0].emp_id=101;
- e1[0].age=22;
- e1[0].gross_salary=1054000;
- e1[0].net_salary=9500000;
- strcpy(e1[1].name,"somu");
- e1[1].emp_id=102;
- e1[1].age=23;
- e1[1].gross_salary=7500000;
- e1[1].net_salary=6500000;
- cout<<"Enter employee id:";
- int eid;
- cin>>eid;
- if (eid!=101 && eid!=102)
-   cout<<"Invalid id";
- else
- {
-   eid-=101;
-   cout<<"\nEmployee id:"<<e1[eid].emp_id;
-   cout<<"\nEmployee name:"<<e1[eid].name;
-   cout<<"\nEmployee age:"<<e1[eid].age;
-   cout<<"\nEmployee gross salary:"<<e1[eid].gross_salary;
-   cout<<"\nEmployee net salary:"<<e1[eid].net_salary;
- }
+{
+ 
   return 0;
 }
